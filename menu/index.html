@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img id="logo" src="logo khoa.png" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home1</a></li>
+                <li><a href="">Home2</a></li>
+                <li><a href="">Home3</a></li>
+            </ul>
+            <img class="user-pic" src="logo khoa.png" alt="" onclick="toggleMenu()">
+
+            <div class="sub-menu-warp" id="subMenu">
+                <div class="sub-menu open-menu">
+                    <div class="user-info">
+                        <img  src="logo khoa.png" alt="">
+                        <h3>James Aldrino</h3>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-home-heart-fill"></i>
+                        <p>edit profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-home-heart-fill"></i>
+                        <p>Hope</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-home-heart-fill"></i>
+                        <p>You</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-home-heart-fill"></i>
+                        <p>always smile</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        
+
+        function toggleMenu(){
+            var element = document.getElementById("subMenu");
+            element.classList.toggle("open-menu");
+        }
+    </script>
+
+</body>
+</html>
